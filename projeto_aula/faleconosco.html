@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/aula.css">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Fale conosco</title>
+    <script>
+        function ValidaForm(form){
+            if(form.NOME.value==""){
+                alert("Por favor digite o seu nome");
+                form.NOME.focus();
+                return;
+            }
+
+            if(form.EMAIL.value==""){
+                alert("Por favor digite o seu email");
+                form.EMAIL.focus();
+                return;
+            }
+
+            if(form.ENDERECO.value==""){
+                alert("Por favor digite o seu endereço");
+                form.ENDERECO.focus();
+                return;
+            }
+            if(form.TELEFONE.value==""){
+                alert("Por favor digite o seu telefone");
+                form.TELEFONE.focus();
+                return;
+            }
+            
+            if(form.COMENTARIO.value==""){
+                alert("Por favor digite o seu comentario");
+                form.COMENTARIO.focus();
+                return;
+            }
+
+            
+
+        }
+
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="check">
+        <label for="check" id="icone"><img src="imagens/icone.png"></label>
+        <div class="barra">
+            <nav>
+                <a href="index.html"><div class="link">Home</div> </a>
+                <a href="Fps.html"><div class="link">FPS</div> </a>
+                <a href="indie.html"><div class="link">Indie</div> </a>
+                <a href="esporte.html"><div class="link">Esportes</div> </a>
+                <a href="rpg.html"><div class="link">Rpg</div> </a>
+                <a href="top3.html"><div class="link">Top 3  mais vendidos</div> </a>
+                <a href="faleconosco.html"><div class="link">Fale conosco</div> </a> 
+            </nav> 
+        </div>
+        <header>	
+            <img src="imagens/logo.png" id="logo">
+            <hr size="1">
+        </header>       
+
+    <br><center>
+    <h1>Fale conosco</h1>
+    <hr size="1" width="450">
+
+    </center>
+
+
+    <div class="contato">
+        <center>
+            <p>Formulario para contato</p>
+        </center>
+        <form action="">
+            <label for="nom">Nome<input type="text" id="nom"name="NOME" placeholder="Digite seu nome"></label><br><br>
+            <label for="ema">Email<input type="text" id="ema" name="EMAIL"  placeholder="Digite o seu email"></label><br><br>
+            <label for="end">Endereço<input type="text" id="end" name="ENDERECO"  class="end" placeholder="Digite o seu Endereço"></label><br><br>
+            <label for="tel">Telefone <input type="text" id="tel" name="TELEFONE" class="end" placeholder="Digite o seu Telefone"></label><br><br>
+
+        
+
+    </div>
+
+    <div class="coment">
+        
+        <label for="urg">Grau de urgencia<input type="range"  min="0" max="5" id="urg"></label>
+        <label for="comentario"><textarea name="COMENTARIO" id="comentario" cols="30" rows="10" placeholder="Fale conosco"></textarea></label>
+    </div>
+
+    
+    <input type="submit" value="enviar" onclick="ValidaForm(this.form)">
+    <input type="reset" value="refazer">
+    
+        <div id="test">
+            <hr size="1" color="black">
+            <center>
+            <a href="index.html" id="volta">Voltar</a>
+            </center>
+        </div>
+    
+</body>
+</html>

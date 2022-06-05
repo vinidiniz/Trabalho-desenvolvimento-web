@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#4B0082;
+}
+
+div#corpo{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    box-shadow:1px 1px 10px black;
+    background-color:#4F4F4F;
+ }
+
+header img#logo{
+    
+    width: 100px;
+    position: relative;
+    left: 450px;
+}
+
+hr{
+    color: lawngreen;
+}
+
+/* Formatação do texto */
+
+p{
+    font-family:sans-serif;
+    text-align: justify;
+    text-indent: 40pt;
+    color: white;
+    font-size: 14pt;
+}
+
+h1{
+    font-family:sans-serif;
+    color: white;
+}
+
+h1#links{
+    font-style: italic;
+}
+
+h3{
+
+    font-family:  sans-serif;
+    color: blanchedalmond;
+}
+
+/* Formataçao das imagens com links*/
+
+.imagem{
+    width:250px;
+    height:150px;
+    margin: 35px;
+    border:2px black solid;
+    box-shadow:2px 2px 20px #4B0082;
+   
+}
+
+div#exem{
+    top: 250px;
+    margin-top: -280px;
+    margin-bottom: 250px;
+    display:inline-block;
+    position: relative;
+
+    
+}
+
+div#test{
+    font-size: 15pt;
+    display: block;
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+a#volta{
+    font-family:sans-serif;
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
+/*Formatação das imagens sem links*/
+
+.imagemp{
+    width:250px;
+    height:150px;
+    border:2px white solid;
+    box-shadow:2px 2px 20px #4B0082;
+    margin-left: 140px;
+    margin-bottom: 5px;
+}
+
+
+
+
+/*   Configuração da section,aside e footer     */
+
+section{
+    display: block;
+    width: 520px;
+    float: left;
+    /*border-right:1px solid #606060;*/
+    
+}
+
+aside{
+    display: block;
+    width:470px;
+    float: right;
+    
+    
+}   
+
+
+
+/* MENU */
+#check{
+    display: none;
+}
+
+#icone{
+    cursor: pointer;;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.barra{
+    background-color: #333;
+    height: 100%;
+    position: absolute;
+    width: 300px;
+    transition: all .2s linear;
+    left: -300px;
+    opacity: 0.9;
+}
+
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+
+}
+
+nav a {
+    text-decoration: none;
+    
+}
+
+.link{
+    background-color: #494950;
+    padding: 20px;
+    font-family: Tomorrow;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color:wheat;
+    border-bottom: 3px solid #222;
+    opacity: 0;
+    margin-top: 200px;
+
+}
+
+.link:hover{
+    background-color: teal;
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px);
+
+}
+
+#check:checked ~ .barra nav a .link{
+   opacity: 1;
+   margin-top: 0;
+   transition-delay: .2s;
+}
+

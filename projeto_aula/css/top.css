@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+div .podio{
+    width: 50px;
+    color: ivory;
+    padding: 5px;
+    margin: 5px;
+}
+
+table{
+    width: 50px;
+    
+    
+}
+
+
+
+table td .podio{
+    border: 1px black solid;
+
+}
+td{
+    font-size: 15pt;
+}
+
+
+/*Posição das tabelas*/
+/*div.esquer{
+    display: block;
+    float: left;
+}
+
+div.direito{
+    
+    display: block;
+    float: right;
+}*/
+
+div.primeiro{
+    display: inline;
+    width: 400px;
+}
+
+
+/*Tabela teste*/
+table.test{
+    background-color:#9400D3;
+    border: 1px black solid;
+    color: blanchedalmond;
+    border-spacing:5px;
+    margin-top: 40px;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+
+
+
+table.test td{
+    background-color: #4B0082;
+    border:1px black solid;
+    padding:10px;
+}
+
+
+td.clasifiq{
+    text-align: center;
+}
+
+table.test td.top1{
+    background-color: #800080;
+    border:1px black solid;
+    padding:10px;
+
+}
